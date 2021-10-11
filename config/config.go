@@ -23,8 +23,8 @@ func Load() {
 	}
 
 	StringDbConnection = fmt.Sprintf("%s:%s@/%s?charset=utf8&parseTime=True&loc=Local",
-		os.Getenv("USER"),
-		os.Getenv("PASSWORD"),
+		os.Getenv("USER_DB"),
+		os.Getenv("PASSWORD_DB"),
 		os.Getenv("DB"))
 
 	DB = os.Getenv("DB")
